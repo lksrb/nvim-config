@@ -1,7 +1,7 @@
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
-lsp.ensure_installed({ 'lua_ls', 'clangd', 'rust_analyzer' })
+lsp.ensure_installed({ 'lua_ls', 'clangd', 'csharp_ls', 'rust_analyzer' })
 
 lsp.on_attach(function(client, bufnr)
 	local opts = { buffer = bufnr, remap = false }
