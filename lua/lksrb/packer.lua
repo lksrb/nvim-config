@@ -7,15 +7,31 @@ use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	-- or                            , branch = '0.1.x',
 	requires = { {'nvim-lua/plenary.nvim'} }
-}  
+}
 
 use {
-	'folke/tokyonight.nvim',
-	as = 'tokyonight',
-	config = function()
-		vim.cmd('colorscheme tokyonight')
-	end
+    'rebelot/kanagawa.nvim',
+    as = 'kanagawa'
+}
 
+use {
+    'nyoom-engineering/nyoom.nvim',
+    as = 'nyoom'
+}
+
+use {
+	'catppuccin/nvim',
+	as = 'catppuccin'
+}
+
+use {
+    'rose-pine/neovim',
+    as = 'rose-pine'
+}
+
+use {
+    'folke/tokyonight.nvim',
+    as = 'tokyonight'
 }
 
 use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
